@@ -172,3 +172,26 @@ python tests/test_solvers.py
 # 端到端冒烟测试（需要先安装 nilmtcmilp）
 python tests/test_tmilp_smoke.py
 ```
+
+## 引用
+
+本包封装的是下面这篇论文中的紧凑 MILP 形式（启动变量连续化 + 归一化功率变量）：
+
+> W. Li, X. Yan, and C. Gao, "A Compact Mixed-Integer Linear Programming Formulation for
+> Non-Intrusive Load Monitoring With Startup Linking and Normalized Power Variables,"
+> in *2026 IEEE/IAS Industrial and Commercial Power System Asia (I&CPS Asia)*, Nanjing, China, 2026.
+> DOI: [10.1109/ICPSASIA70813.2026.11692312](https://doi.org/10.1109/ICPSASIA70813.2026.11692312)
+
+```bibtex
+@inproceedings{li2026compact,
+  title     = {A Compact Mixed-Integer Linear Programming Formulation for Non-Intrusive
+               Load Monitoring With Startup Linking and Normalized Power Variables},
+  author    = {Li, Wei and Yan, Xingyu and Gao, Ciwei},
+  booktitle = {2026 IEEE/IAS Industrial and Commercial Power System Asia (I\&CPS Asia)},
+  address   = {Nanjing, China},
+  year      = {2026},
+  doi       = {10.1109/ICPSASIA70813.2026.11692312}
+}
+```
+
+GitHub 会读取根目录的 [CITATION.cff](CITATION.cff)。

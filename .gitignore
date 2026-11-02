@@ -8,3 +8,7 @@ model_demo/
 *.lp
 *.sol
 .pytest_cache/
+
+# 论文 PDF (IEEE 版权, 不入库; 用 DOI 链接代替)
+A_Compact_*.pdf
+_paper.txt
