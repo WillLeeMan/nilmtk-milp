@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nilmtk-milp"
+version = "0.1.0"
+description = "MILP-based (TMILP-1bin-project) non-intrusive load monitoring disaggregator for NILMTK"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "NILM-MILP contributors" }]
+keywords = ["nilmtk", "nilm", "energy disaggregation", "milp", "optimization"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+]
+
+[project.optional-dependencies]
+highs = ["highspy>=1.7"]
+cbc = ["pulp[cbc]>=3.0"]
+scip = ["pyscipopt>=4.0"]
+cpsat = ["ortools>=9.8"]
+all = [
+    "highspy>=1.7",
+    "pulp[cbc]>=3.0",
+    "pyscipopt>=4.0",
+    "ortools>=9.8",
+]
+
+[tool.setuptools.packages.find]
+include = ["nilmtk_milp*"]
+
+[tool.setuptools.package-data]
+nilmtk_milp = ["py.typed"]
