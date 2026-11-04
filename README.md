@@ -4,7 +4,7 @@
 [NILMTK](https://github.com/nilmtk/nilmtk) 的算法包，布局参照
 [nilmtk-contrib](https://github.com/nilmtk/nilmtk-contrib)。
 
-- 模型本体（变量、约束、目标函数）复用你已有的 `nilmtcmilp` 包，**只读引用，不修改其源码**；
+- 模型本体（变量、约束、目标函数）；
 - 本包负责三件事：把 NILMTK 的 MeterGroup/DataFrame 整理成模型输入、调度求解器、把解还原成各电器功率；
 - 求解器可在 **HiGHS / CBC / SCIP / CP-SAT** 之间切换，用户按自己环境任选其一。
 
